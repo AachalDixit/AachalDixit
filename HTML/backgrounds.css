@@ -1,0 +1,9 @@
+body{
+    background-color: teal;
+}
+p{
+    background-color: tomato;
+}
+h1{
+    background: rgba(0, 128, 0, 0.3) /* 30% opacity */
+}

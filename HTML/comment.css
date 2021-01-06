@@ -1,0 +1,11 @@
+/* This is a single-line comment */
+body{
+    background-color: slategray;
+}
+/* This is
+a multi-line
+comment */
+h1{
+    color: snow; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

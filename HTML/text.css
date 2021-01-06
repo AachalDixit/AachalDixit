@@ -1,0 +1,14 @@
+body{
+    background-color: salmon;
+    color: sienna;
+    text-align: center;    
+}
+    h1 {
+        text-transform:uppercase;
+    }
+    h2 {
+        text-indent: 50px;
+    }
+    h3 {
+        text-shadow: 2px 2px;
+    }
