@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website!</title>
+</head>
+<style>
+    body{
+        /*For background color and font-family of body*/
+        background-image:url(topography.svg), linear-gradient(to right, rgba(245, 26, 135, 0.925), rgba(120, 36, 199, 0.932));
+        font-family: sans-serif;
+        margin: 40px 10px;
+    }
+    li{
+        /* For same line*/
+        display: inline;
+    }
+    ul{
+        float: left;
+    }
+    a{
+        /* Navigation deco*/
+        margin: 20px 5px 20px 5px;
+        text-decoration: none;
+        background-color: hsl(46, 100%, 50%);
+        color: black;
+        /*For Space*/
+        padding:15px 77px;
+        font-size: 18px;
+    }       
+    .image{
+        /* Background Image deco*/
+        margin: 30px 20px 5px 40px;
+        display: block;
+        float: left;
+        background-image: url('res.jpg');
+        width: 60%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        text-align: right;
+    }
+    .TTJ{
+        /*Text on Background*/
+        margin: 200px 50px 0;
+        background-color: hsl(46, 100%, 50%);
+        color: rgb(59, 57, 57);
+        width: 270px;
+        height:50px;
+        font-size: 30px;
+        font-weight: 700;
+        text-align:center;
+    }
+    .PGT{
+        /*Text on Background*/
+        margin: 0 50px 0;
+        background-color: hsl(46, 100%, 50%);
+        color: rgb(59, 57, 57);
+        width: 160px;
+        height:25px;
+        font-size: 14px;
+        text-align:center;
+        font-weight: 900;
+    }    
+    .tacos,.kombucha {
+        /* Price box deco*/
+        margin: 30px 0 0;
+        float: left;
+        background-color:  hsl(46, 100%, 50%);
+        width: 33%;
+        height: 185px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    @media only screen and (max-width: 1000px){
+        /* For maximum width 1000px*/ 
+        .tacos,.kombucha{ 
+            width: 30%;
+        }
+    } 
+    @media only screen and (max-width: 700px){
+        /*For Maximum width 700px*/
+        .tacos,.kombucha{ 
+            width: 30%;
+        }
+    }    
+    @media only screen and (max-width: 400px){
+        /* For maximum width 400px*/
+        .tacos,.kombucha{ 
+            width: 25%;
+        }
+    }
+    #a{
+        /* Bigger size of price*/
+        font-size: 60px;
+        color:  rgb(59, 57, 57);
+    }
+    #b{
+        /*to Bold*/
+        font-weight: 600;
+        margin: -50px;
+    }
+    .t,.b,.w,.m{
+        /*Decoration of varieties*/
+        margin: 10px;
+        background-color: white;
+        width: 22.5%;
+        height: 180px;  
+        /*Same box*/
+        box-sizing: border-box;
+        /*text in center*/
+        text-align: center;
+        border: white;
+        /*for same line*/
+        display: inline;
+        float: left;
+    }
+    
+    .t{
+        margin: 10px 480px 20px 40px;
+    }
+    .b{
+        margin: 10px 10px 10px -460px;
+    }
+    .w{
+        margin: 10px 0 10px -140px;
+    }
+    .m{
+        margin: 10px 0 10px 20px;
+    }
+    #sym{
+        /* For increasing size of Symobol*/
+        font-size: 50px;
+        margin-top: 0;
+    }
+    h3{
+        margin-top: -40px;
+    }
+    h5{
+        margin-top: -5px;
+        color:  rgb(59, 57, 57);
+        font-weight: 700;
+    }
+    @media only screen and (max-width: 700px){
+        /* For max-width 700px*/
+        .t,.b,.w,.m{
+            width: 50%;
+        }
+        .w{
+            margin: 10px 20px 10px 40px;
+        }
+        .m{
+            margin: 10px 10px 10px -70px;
+        }
+    }
+    .ft{
+        /*Box*/
+        width: 80%;
+        height:200px;
+        background-color: white;
+        margin: 650px 10px 0 40px;
+        padding: 100px;
+    }
+    .ft>img{
+        /*Image belongs to ft class*/
+        margin-top: -30px;
+        width: 400px;
+        height:300px;
+        float: left;
+    }
+    .ftt{
+        /*Text on box*/
+        text-align: left;
+        padding: 80px;
+        color: rgb(39, 37, 37);
+        font-weight: 800;
+    }
+    button {
+        background-color: hsl(46, 100%, 50%);
+        color: black;
+        padding: 10px 20px;
+        border: none;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    @media only screen and (max-width: 700px){
+        .ft{
+            margin: 900px 10px 0 40px;
+            height: 400px;
+        }
+    }
+    #grad1 {
+        /*Gradient */
+        display: block;
+        float: left;
+        background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,140,0,1));
+        width: 40%;
+        height:10px;
+        margin:50px 0 20px 0;
+    }
+    h2{
+        display: inline;
+        float: left;
+        margin: 40px 5px 10px 25px;
+    } 
+    #grad2 {
+        /*gradient*/
+        display: block;
+        float: right;
+        background-image: linear-gradient(to right, rgba(255,140,0,1), rgba(255,0,0,0));
+        width: 40%;
+        height:10px;
+        margin-top: 50px;
+    }  
+    @media only screen and (max-width: 700px){
+        /*For max width 700px*/
+        #grad1, #grad2{
+            width: 25%;
+        }
+        h2{
+            margin:40px 5px 10px 50px;
+        }
+    }    
+    #f1,#f2,#f3,#f4,#f5,#f6,#f7,#f8,#f9,#f10{
+        /*Setting images*/
+        display: block;
+        float: left;
+        height:225px;
+        width:225px;
+        margin: 10px;
+    }    
+    #f1{
+        margin: 100px 10px 10px -720px;
+    }
+    #f2{
+        margin: 100px 10px 10px -475px;
+    }
+    #f3{
+        margin: 100px 10px 10px -230px;
+    }
+    #f4{
+        margin-top: 40px ;
+    }
+    #f5{
+        margin: 40px -80px 10px 10px;
+    }
+    #f6{
+        margin-left: -100px;
+    }
+    #f10{
+        margin: 10px -80px 10px 10px;
+    }
+    @media only screen and (max-width: 700px){
+        /*For max width 700px*/
+        #f1,#f2,#f3,#f4,#f5,#f6,#f7,#f8,#f9,#f10{
+            width: 300px;
+        }
+        #f1{
+            margin: 15px 0 10px -150px;
+        }
+        #f2{
+            margin: -230px 0 0 -120px;
+        }
+        #f3{
+            margin: 20px 10px 10px -130px;
+        }
+        #f4{
+            margin-top: 20px;
+        }
+        #f5{
+            margin:10px 0 10px -120px;
+        }
+        #f6{
+            margin:10px 0 10px 20px;
+        }
+        #f7{
+            margin:10px 10px 10px -120px;
+        }
+        #f8{
+            margin:10px -20px 10px 0;
+        }
+        #f9{
+            margin: 10px 10px 10px -120px;
+        }
+    }
+</style>
+<body>
+    <ul>
+        <!--Fro navigation bar-->
+        <li><a href="demo.html"><b>TACOS</b></a></li>
+        <li><a href="demo.html"><b>BEERS</b></a></li>
+        <li><a href="demo.html"><b>WINES</b></a></li>
+        <li><a href="demo.html"><b>DESSERTS</b></a></li>
+        <li><a href="demo.html"><b>RESSERVATIONS</b></a></li>
+    </ul><br>
+    <!--Background image with Text on it-->
+    <div class="image">
+        <div class="TTJ"><p>Terry's Taco Joint</p></div>
+        <div class="PGT"><p>Preety Good Tacos!</p></div>
+    </div>    
+    <div>
+        <!--For Price Section-->
+        <div class="tacos"><p id="a">$1.99</p><p id="b">Tacos</p></div><br>
+        <div class="kombucha"><p id="a">$3.99</p><p id="b">Kombucha</p></div>
+    </div>
+    <!--We use id to give different values-->
+    <div class="t"><p id="sym">&#11036;</p><h3>Tacos</h3> <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</h5></div>
+    <div class="b"><p id="sym">&#127866;</p><h3>Beer</h3> <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</h5></div>
+    <div class="w"><p id="sym">&#127863;</p><h3>Wine</h3> <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</h5></div><br>
+    <div class="m"><p id="sym">&#127925;</p><h3>Music</h3> <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</h5></div><br>
+    <div class="ft"><img src="queso-taco.png">
+    <div class="ftt">
+        <h3>Featured Taco</h3>
+        <h4>Slim Profile, easy to hold and loaded with cheese.</h4>
+        <h4>This is the one you have been waiting for</h4>
+        <!--button for link to new information but here we only create button-->
+        <button class="button">Learn More &#10145;</button>
+    </div>
+    <div>
+        <!--For gradient -->
+        <div id="grad1"></div>
+        <div><h2>Instant Grams</h2></div>
+        <div id="grad2"></div>
+    </div>
+    <!--img for image and src is source of image and id to use different values-->
+    <img src="f1.jpg" id="f1">
+    <img src="f2.jpg" id="f2">
+    <img src="f3.jpg" id="f3">
+    <img src="f4.jpg" id="f4">
+    <img src="f5.jpg" id="f5">
+    <img src="f7.jpg" id="f6">
+    <img src="f8.jpg" id="f7">
+    <img src="f9.jpg" id="f8">
+    <img src="f10.jpg" id="f9">
+    <img src="f11.jpg" id="f10">
+</body>
+</html>
