@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           p{  
+              background-image: url(border4.jpg), url(border.jpg);
+              background-position: center bottom, center top;
+              background-repeat: no-repeat, repeat;
+              padding: 50px;
+        }
+           h2{
+            border: 15px dotted black;
+            padding: 30px;
+            background: greenyellow;
+            background-clip: padding-box;
+        } 
+           h3{
+            border: 15px dotted black;
+            padding: 30px;
+            background: greenyellow;
+            background-clip: border-box;
+        }
+           h4{
+            border: 15px dotted black;
+            padding: 30px;
+            background: greenyellow;
+            background-clip: content-box;
+           }
+        </style>
+    </head>
+    <body>
+        <p>Multiple Borders</p>
+        <h2>Background padding box</h2>
+        <h3>Background border box</h3>
+        <h4>Background content box</h4>
+    </body>
+</html>
